@@ -1,0 +1,13 @@
+@import '../../styles/variable.scss';
+
+.lcp-input-style {
+  background-color: $white;
+
+  .MuiFormLabel-root {
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}
+.MuiInputBase-inputMultiline {
+  padding: 15px !important;
+}

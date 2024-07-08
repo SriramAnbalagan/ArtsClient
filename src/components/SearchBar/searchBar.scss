@@ -1,0 +1,35 @@
+@import '../../styles/variable.scss';
+
+.search {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 200px;
+  height: 35px;
+  position: relative;
+  border: 1px solid #e2e2e9;
+  input {
+    padding: 0 !important;
+  }
+  .searchIcon {
+    position: absolute;
+    margin: auto;
+    right: 8px;
+    top: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+    svg {
+      color: $primary;
+      font-size: 18px;
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+.searchIcon.disabled {
+  svg {
+    color: rgba($black, 0.26);
+  }
+}

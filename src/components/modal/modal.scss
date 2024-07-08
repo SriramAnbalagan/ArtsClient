@@ -1,0 +1,59 @@
+@import '../../styles//variable.scss';
+
+.MuiPaper-root {
+  width: 100%;
+  max-width: 800px !important;
+}
+
+.dialog-header {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  align-items: center;
+}
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.medium-size-modal {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 100%;
+  .MuiDialog-paperScrollPaper {
+    overflow: hidden;
+    .modal-content {
+      max-height: 400px;
+      overflow: hidden;
+      overflow-y: unset;
+      margin: 0 20px 20px;
+      border: 1px solid rgba($black, 0.2);
+      border-radius: 10px;
+    }
+  }
+}
+
+.modal-content {
+  min-width: 300px;
+  text-align: center;
+  overflow-y: auto;
+  .active-times {
+    text-align: left;
+  }
+}
+
+.dialog-buttons {
+  padding-bottom: 18px;
+  padding-right: 24px;
+  Button {
+    min-width: 100px;
+  }
+}
+
+//Art Canvas Style
+.art-canvas {
+  width: 100% !important;
+}

@@ -1,0 +1,31 @@
+@import "../../styles//variable.scss";
+
+.art-btn-wrapper {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: $primary !important;
+    &.Mui-disabled {
+        opacity: 0.6;
+        color: $white !important;
+    }
+    &.MuiButton-outlined {
+        background-color: $white !important;
+        border: 1px solid $primary !important;
+        color: $primary;
+    }
+}
+
+.btn-spinner {
+    display: flex;
+    align-items: center;
+    .MuiCircularProgress-root {
+        width: 14px !important;
+        height: 14px !important;
+        .MuiCircularProgress-svg {
+            color: white;
+        }
+    }
+}
